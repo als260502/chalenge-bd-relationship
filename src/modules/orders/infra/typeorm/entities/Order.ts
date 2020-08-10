@@ -30,6 +30,7 @@ class Order {
     cascade: ['insert'],
     eager: true,
   })
+  @JoinColumn()
   order_products: OrdersProducts[];
 
   @CreateDateColumn()
